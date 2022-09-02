@@ -1,0 +1,102 @@
+Day 2
+Run Django project school management
+
+1) install requirements.txt file
+-pip install -r requirements.txt
+
+2)database patchup
+-python manage.py makemigrations
+
+3)migrate environment
+-python manage.py migrate
+
+4) to run project 
+-python manage.py runserver
+
+Home assisgnment 1:
+Deploy atleast 3 django project at a same time !
+Solution : creating diff Virtualenv and running severs on diff ports
+
+steps:
+for django website:
+pip install virtualenv
+virtualenv venv
+.\venv\Scripts\activate
+pip install -r requirements.txt
+python manage.py runserver 127.0.0.1:8000
+
+for schoolmgt:
+pip install virtualenv
+virtualenv venv1
+.\venv\Scripts\activate
+pip install -r requirements.txt
+python manage.py runserver 127.0.0.1:8001
+
+for ecommercesite:
+ pip install virtualenv
+virtualenv venv2
+.\venv\Scripts\activate
+pip install -r requirements.txt
+python manage.py runserver 127.0.0.1:8002
+
+
+THE NEED FOR GITHUB
+GITLAB 
+Bitbucket
+Github 
+Visual Studio
+
+Home assignment 2:
+push or upload your first project code in recent repository.
+
+steps:
+Option 1 >install git 
+(
+
+in cmd: 
+git --version
+git config --global user.name “dilishastha23”
+git config --global user.email “dilustha4@gmail.com”
+git config --global --list
+
+open powershell from the django website folder
+git init -b main
+git add
+git commit -m "initial commit"  ( creating local repo)
+git remote add origin https://github.com/dilishastha23/First_project.git ( local repo lai remote repo ma push garn ako lagi)
+git remote -v (verifying)
+git push origin main
+
+)
+
+option 2> Down Github desktop:
+Clone repo first_project locally 
+commit
+push
+
+**Create repo from github desk
+copy sclmgt files lai sclmgt github repo folder ma 
+commit
+push
+
+
+Home assignment 3:
+configure your github with vs code and cmd/terminal
+
+Option 1 >install git 
+(
+
+in cmd: 
+git --version
+git config --global user.name “dilishastha23”
+git config --global user.email “dilustha4@gmail.com”
+git config --global --list
+
+open powershell from the django website folder
+git init -b main
+git add
+git commit -m "initial commit"  ( creating local repo)
+git remote add origin https://github.com/dilishastha23/First_project.git ( local repo lai remote repo ma push garn ako lagi)
+git remote -v (verifying)
+git push origin main
+
